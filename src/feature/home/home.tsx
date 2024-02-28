@@ -13,7 +13,7 @@ interface HomeProps extends RouteComponentProps {
 const Home: React.FunctionComponent<HomeProps> = (props) => {
   const { history, status, onLeaveOrJoinSession } = props;
   const onCardClick = (type: string) => {
-      history.push(`/${type}${location.search}`);
+    history.push(`/${type}${location.search}`);
   };
   const featureList = [
     {
