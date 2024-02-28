@@ -1,0 +1,34 @@
+.nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Other styles for .navhome, .navdoc, .navleave remain unchanged */
+
+.home {
+  padding-top: 10vh;
+}
+
+.home h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.feature-entry {
+  display: flex; /* Already set for flexbox */
+  flex-wrap: wrap;
+  justify-content:center; /* Adjust spacing as needed */
+
+  /* New styles for card layout within .feature-entry */
+  .entry-item {
+    width: 50%; /* Adjust width for desired card size and responsive behavior */
+    margin: 0 40px 20px 10px; /* Adjust margins as desired */
+    box-sizing: border-box; /* Ensure margins don't collapse with padding */
+  }
+}
+
+.ant-card-cover {
+  padding-top: 40px;
+}
